@@ -1,0 +1,41 @@
+body,
+html {
+    /*background-image: url("https://img.freepik.com/free-vector/blackboard-background-with-sketches-of-exam-elements_23-2147594826.jpg?size=338&ext=jpg");*/
+    color: black;
+}
+
+.center {
+    text-align: center;
+}
+
+.margin-top {
+    margin-top: 5%;
+}
+
+#displayQuestionTwo {
+    display: none;
+}
+#displayQuestionThree {
+    display: none;
+}
+#displayQuestionFour {
+    display: none;
+}
+#displayQuestionFive {
+    display: none;
+}
+#displayQuestionSix {
+    display: none;
+}
+#displayQuestionSeven {
+    display: none;
+}
+#displayQuestionEight {
+    display: none;
+}
+#displayQuestionNine {
+    display: none;
+}
+#displayQuestionTen {
+    display: none;
+}

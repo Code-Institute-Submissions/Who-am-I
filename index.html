@@ -40,12 +40,12 @@
                                 Q1
                                 <p id="showQuestionOne"></p>
                                 <p id="answerOne"></p>
-                                <form id="hideQuestionFormOne" onsubmit="answerQuestionOne(); return false;">
+                                <form id="hideQuestionFormOne" onsubmit="answerQuestion('One', qOne, questionSelectOne, 'Two'); creatingQuestionArray(2,qTwo); getRandomQuestion('One', 'Two', qTwo); getRandomQuestion('Two', 'Two', qTwo); getRandomQuestion('Three', 'Two', qTwo);  return false; ">
                                     <select id="questionSelectOne">
-        <option id="questionOne1">a</option>
-        <option id="questionTwo1">b</option>
-        <option id="questionThree1">c</option>
-        </select>
+                                        <option id="questionOneOne">a</option>
+                                        <option id="questionTwoOne">b</option>
+                                        <option id="questionThreeOne">c</option>
+                                    </select>
                             </div>
                         </div>
                         <div class="row">
@@ -64,12 +64,12 @@
                                 Q2
                                 <p id="showQuestionTwo"></p>
                                 <p id="answerTwo"></p>
-                                <form id="hideQuestionFormTwo" onsubmit="answerQuestionTwo(); return false;">
+                                <form id="hideQuestionFormTwo" onsubmit="answerQuestion('Two', qTwo, questionSelectTwo, 'Three'); creatingQuestionArray(3,qThree);  getRandomQuestion('One', 'Three', qThree,); getRandomQuestion('Two', 'Three', qThree); getRandomQuestion('Three', 'Three', qThree);  return false; ">
                                     <select id="questionSelectTwo">
-    <option id="questionOne2">a</option>
-    <option id="questionTwo2">b</option>
-    <option id="questionThree2">c</option>
-    </select>
+                                        <option id="questionOneTwo">a</option>
+                                        <option id="questionTwoTwo">b</option>
+                                        <option id="questionThreeTwo">c</option>
+                                    </select>
                             </div>
                         </div>
                         <div class="row">
@@ -88,19 +88,19 @@
 
             <section>
                 <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-6" id="displayQuestionThree">
+                    <div class="col-sm-12 col-md-6 col-lg-6"  id="displayQuestionThree">
                         <div class="row">
                             <div class="col">
 
                                 Q3
                                 <p id="showQuestionThree"></p>
                                 <p id="answerThree"></p>
-                                <form id="hideQuestionFormThree" onsubmit="answerQuestionThree(); return false;">
+                                <form id="hideQuestionFormThree" onsubmit="answerQuestion('Three', qThree, questionSelectThree, 'Four'); creatingQuestionArray(4,qFour);  getRandomQuestion('One', 'Four', qFour,); getRandomQuestion('Two', 'Four', qFour); getRandomQuestion('Three', 'Four', qFour);  return false; ">
                                     <select id="questionSelectThree">
-    <option id="questionOne3">a</option>
-    <option id="questionTwo3">b</option>
-    <option id="questionThree3">c</option>
-    </select>
+                                        <option id="questionOneThree">a</option>
+                                        <option id="questionTwoThree">b</option>
+                                        <option id="questionThreeThree">c</option>
+                                    </select>
                             </div>
                         </div>
                         <div class="row">
@@ -119,12 +119,12 @@
                                 Q4
                                 <p id="showQuestionFour"></p>
                                 <p id="answerFour"></p>
-                                <form id="hideQuestionFormFour" onsubmit="answerQuestionFour(); return false;">
+                                <form id="hideQuestionFormFour" onsubmit="answerQuestion('Four', qFour, questionSelectFour, 'Five'); creatingQuestionArray(5,qFive);  getRandomQuestion('One', 'Five', qFive,); getRandomQuestion('Two', 'Five', qFive); getRandomQuestion('Three', 'Five', qFive);  return false; ">
                                     <select id="questionSelectFour">
-    <option id="questionOne4">a</option>
-    <option id="questionTwo4">b</option>
-    <option id="questionThree4">c</option>
-    </select>
+                                        <option id="questionOneFour">a</option>
+                                        <option id="questionTwoFour">b</option>
+                                        <option id="questionThreeFour">c</option>
+                                    </select>
                             </div>
                         </div>
                         <div class="row">
@@ -151,12 +151,12 @@
                                 Q5
                                 <p id="showQuestionFive"></p>
                                 <p id="answerFive"></p>
-                                <form id="hideQuestionFormFive" onsubmit="answerQuestionFive(); return false;">
+                                <form id="hideQuestionFormFive" onsubmit="answerQuestion('Five', qFive, questionSelectFive, 'Six'); creatingQuestionArray(6,qSix);  getRandomQuestion('One', 'Six', qSix,); getRandomQuestion('Two', 'Six', qSix); getRandomQuestion('Three', 'Six', qSix);  return false; ">
                                     <select id="questionSelectFive">
-    <option id="questionOne5">a</option>
-    <option id="questionTwo5">b</option>
-    <option id="questionThree5">c</option>
-    </select>
+                                        <option id="questionOneFive">a</option>
+                                        <option id="questionTwoFive">b</option>
+                                        <option id="questionThreeFive">c</option>
+                                    </select>
                             </div>
                         </div>
                         <div class="row">
@@ -175,12 +175,12 @@
                                 Q6
                                 <p id="showQuestionSix"></p>
                                 <p id="answerSix"></p>
-                                <form id="hideQuestionFormSix" onsubmit="answerQuestionSix(); return false;">
+                                <form id="hideQuestionFormSix" onsubmit="answerQuestion('Six', qSix, questionSelectSix, 'Seven'); creatingQuestionArray(7, qSeven);  getRandomQuestion('One', 'Seven', qSeven,); getRandomQuestion('Two', 'Seven', qSeven); getRandomQuestion('Three', 'Seven', qSeven);  return false;">
                                     <select id="questionSelectSix">
-    <option id="questionOne6">a</option>
-    <option id="questionTwo6">b</option>
-    <option id="questionThree6">c</option>
-    </select>
+                                        <option id="questionOneSix">a</option>
+                                        <option id="questionTwoSix">b</option>
+                                        <option id="questionThreeSix">c</option>
+                                    </select>
                             </div>
                         </div>
                         <div class="row">
@@ -207,12 +207,12 @@
                                 Q7
                                 <p id="showQuestionSeven"></p>
                                 <p id="answerSeven"></p>
-                                <form id="hideQuestionFormSeven" onsubmit="answerQuestionSeven(); return false;">
+                                <form id="hideQuestionFormSeven" onsubmit="answerQuestion('Seven', qSeven, questionSelectSeven, 'Eight'); creatingQuestionArray(8, qEight);  getRandomQuestion('One', 'Eight', qEight,); getRandomQuestion('Two', 'Eight', qEight); getRandomQuestion('Three', 'Eight', qEight); return false;">
                                     <select id="questionSelectSeven">
-    <option id="questionOne7">a</option>
-    <option id="questionTwo7">b</option>
-    <option id="questionThree7">c</option>
-    </select>
+                                        <option id="questionOneSeven">a</option>
+                                        <option id="questionTwoSeven">b</option>
+                                        <option id="questionThreeSeven">c</option>
+                                    </select>
                             </div>
                         </div>
                         <div class="row">
@@ -231,12 +231,12 @@
                                 Q8
                                 <p id="showQuestionEight"></p>
                                 <p id="answerEight"></p>
-                                <form id="hideQuestionFormEight" onsubmit="answerQuestionEight(); return false;">
+                                <form id="hideQuestionFormEight" onsubmit="answerQuestion('Eight', qEight, questionSelectEight, 'Nine'); creatingQuestionArray(9, qNine);  getRandomQuestion('One', 'Nine', qNine,); getRandomQuestion('Two', 'Nine', qNine); getRandomQuestion('Three', 'Nine', qNine);  return false;">
                                     <select id="questionSelectEight">
-    <option id="questionOne8">a</option>
-    <option id="questionTwo8">b</option>
-    <option id="questionThree8">c</option>
-    </select>
+                                        <option id="questionOneEight">a</option>
+                                        <option id="questionTwoEight">b</option>
+                                        <option id="questionThreeEight">c</option>
+                                    </select>
                             </div>
                         </div>
                         <div class="row">
@@ -263,12 +263,12 @@
                                 Q9
                                 <p id="showQuestionNine"></p>
                                 <p id="answerNine"></p>
-                                <form id="hideQuestionFormNine" onsubmit="answerQuestionNine(); return false;">
+                                <form id="hideQuestionFormNine" onsubmit="answerQuestion('Nine', qNine, questionSelectNine, 'Ten'); creatingQuestionArray(10, qTen);  getRandomQuestion('One', 'Ten', qTen,); getRandomQuestion('Two', 'Ten', qTen); getRandomQuestion('Three', 'Ten', qTen);  return false;">
                                     <select id="questionSelectNine">
-    <option id="questionOne9">a</option>
-    <option id="questionTwo9">b</option>
-    <option id="questionThree9">c</option>
-    </select>
+                                        <option id="questionOneNine">a</option>
+                                        <option id="questionTwoNine">b</option>
+                                        <option id="questionThreeNine">c</option>
+                                    </select>
                             </div>
                         </div>
                         <div class="row">
@@ -287,12 +287,12 @@
                                 Q10
                                 <p id="showQuestionTen"></p>
                                 <p id="answerTen"></p>
-                                <form id="hideQuestionFormTen" onsubmit="answerQuestionTen(); return false;">
+                                <form id="hideQuestionFormTen" onsubmit="answerQuestion('Ten', qTen, questionSelectTen, 'Two'); return false;">
                                     <select id="questionSelectTen">
-    <option id="questionOne10">a</option>
-    <option id="questionTwo10">b</option>
-    <option id="questionThree10">c</option>
-    </select>
+                                        <option id="questionOneTen">a</option>
+                                        <option id="questionTwoTen">b</option>
+                                        <option id="questionThreeTen">c</option>
+                                    </select>
                             </div>
                         </div>
                         <div class="row">
@@ -324,15 +324,6 @@
     <script type="text/javascript" src="js/usainBoltQuestions.js"></script>
     <script type="text/javascript" src="js/nameSelector.js"></script>
     <script type="text/javascript" src="js/questionOne.js"></script>
-    <script type="text/javascript" src="js/questionTwo.js"></script>
-    <script type="text/javascript" src="js/questionThree.js"></script>
-    <script type="text/javascript" src="js/questionFour.js"></script>
-    <script type="text/javascript" src="js/questionFive.js"></script>
-    <script type="text/javascript" src="js/questionSix.js"></script>
-    <script type="text/javascript" src="js/questionSeven.js"></script>
-    <script type="text/javascript" src="js/questionEight.js"></script>
-    <script type="text/javascript" src="js/questionNine.js"></script>
-    <script type="text/javascript" src="js/questionTen.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

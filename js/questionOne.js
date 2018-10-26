@@ -1,54 +1,50 @@
-let questionSelectOne = document.getElementById("questionSelectOne");
-let q1 = [];
+let qOne = [];
+let qTwo = [];
+let qThree = [];
+let qFour = [];
+let qFive = [];
+let qSix = [];
+let qSeven = [];
+let qEight = [];
+let qNine = [];
+let qTen = [];
 
-function creatingQuestionOneArray(num) {
+function creatingQuestionArray(num, arr) {
+    
     for (let i in allQuestions) {
         if (allQuestions[i].order == num && allQuestions[i].locked == false && allQuestions[i].person == correctAnswer) {
-            // console.log(allQuestions[i])
-            q1.push(allQuestions[i])
+            arr.push(allQuestions[i])
         }
     }
 }
 
-function getRandomQuestionOne(num) {
-    let question1 = q1[Math.floor(Math.random() * q1.length)];
-    if (document.getElementById("questionOne1").textContent != question1.question && document.getElementById("questionTwo1").textContent != question1.question && document.getElementById("questionThree1").textContent != question1.question) {
-        document.getElementById("question" + num).textContent = question1.question;
+function getRandomQuestion(str, str2, arr) {
+    let question = arr[Math.floor(Math.random() * arr.length)];
+    console.log(question)
+    if (document.getElementById("questionOne" + str2).textContent != question.question && document.getElementById("questionTwo"+ str2).textContent != question.question && document.getElementById("questionThree" + str2).textContent != question.question) {
+        document.getElementById("question" + str + str2).textContent = question.question;
     }
     else {
-        getRandomQuestionOne(num);
+        getRandomQuestion(str, str2, arr);
     }
 }
-creatingQuestionOneArray(1);
-getRandomQuestionOne("One1");
-getRandomQuestionOne("Two1");
-getRandomQuestionOne("Three1");
+creatingQuestionArray(1, qOne);
+getRandomQuestion("One", "One", qOne);
+getRandomQuestion("Two", "One", qOne);
+getRandomQuestion("Three", "One", qOne);
 
-function answerQuestionOne() {
-    document.getElementById("hideQuestionFormOne").style.display="none"
-    document.getElementById("showQuestionOne").style.display="block"
-    document.getElementById("hideButtonOne").style.display="none"
-    document.getElementById("displayQuestionTwo").style.display="block"
-
-    
-    // console.log(questionSelectOne.options[questionSelectOne.selectedIndex].textContent);
-    if (questionSelectOne.options[questionSelectOne.selectedIndex].textContent == q1[0].question) {
-        document.getElementById("answerOne").innerHTML = q1[0].answer;
-        document.getElementById("showQuestionOne").innerHTML = q1[0].question;
+function answerQuestion(str, arr, select, str2) {
+    document.getElementById("hideQuestionForm" + str).style.display="none"
+    document.getElementById("showQuestion" + str).style.display="block"
+    document.getElementById("hideButton" + str).style.display="none"
+    document.getElementById("displayQuestion" + str2).style.display="block"
+    for(i=0;i<arr.length;i++){
+        if (select.options[select.selectedIndex].textContent == arr[i].question) {
+            document.getElementById("answer" + str).innerHTML = arr[i].answer;
+            document.getElementById("showQuestion" + str).innerHTML = arr[i].question;
+            break;
+        } else {
+            continue;
+        }
     }
-    else if (questionSelectOne.options[questionSelectOne.selectedIndex].textContent == q1[1].question) {
-        document.getElementById("answerOne").innerHTML = q1[1].answer;
-        document.getElementById("showQuestionOne").innerHTML = q1[1].question;
-    }
-    else if (questionSelectOne.options[questionSelectOne.selectedIndex].textContent == q1[2].question) {
-        document.getElementById("answerOne").innerHTML = q1[2].answer;
-        document.getElementById("showQuestionOne").innerHTML = q1[2].question;
-    }
-    else if (questionSelectOne.options[questionSelectOne.selectedIndex].textContent == q1[3].question) {
-        document.getElementById("answerOne").innerHTML = q1[3].answer;
-        document.getElementById("showQuestionOne").innerHTML = q1[3].question;
-    }
-    getRandomQuestionTwo("One2");
-    getRandomQuestionTwo("Two2");
-    getRandomQuestionTwo("Three2");
 }

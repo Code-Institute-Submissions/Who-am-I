@@ -1,14 +1,13 @@
 let bOne1 = new Question(1, "Are you male?", "No", "Beyonce", false);
 let bOne2 = new Question(1, "Is your voice important for your carer?", "Yes", "Beyonce", false);
 let bOne3 = new Question(1, "Are you from Canada?", "No", "Beyonce", false);
-let bOne4 = new Question(1, "Do you have grey hair?", " No", "Beyonce", false);
+let bOne4 = new Question(1, "Do you have grey hair?", "No", "Beyonce", false);
 
 let bTwo1 = new Question(2, "Are you American?", "Yes", "Beyonce", false);
 let bTwo2 = new Question(2, "Are you a sports star?", "No", "Beyonce", false);
 let bTwo3 = new Question(2, "Are you above 6 feet tall?", "No", "Beyonce", false);
 let bTwo4 = new Question(2, "Have you ever been married", "Yes", "Beyonce", false);
-let bTwo5 = new Question(2, "Are you an actor?", "No", "Beyonce", false);
-
+let bTwo5 = new Question(2, "Are you an actor", "No", "Beyonce", false);
 let bThree1 = new Question(3, "Are you a singer?", "Yes", "Beyonce", false);
 let bThree2 = new Question(3, "Do you have children?", "Yes", "Beyonce", false);
 let bThree3 = new Question(3, "Are you currently married?", "Yes", "Beyonce", false);

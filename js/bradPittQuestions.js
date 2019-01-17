@@ -62,4 +62,4 @@ let bpNine4 = new Question(9, "Are you known to give to charity?", "Yes", "Brad 
 let bpTen1 = new Question(10, "Did you star in Oceans eleven?", "Yes", "Brad Pitt", false);
 let bpTen2 = new Question(10, "Did you star in Fury?", "Yes", "Brad Pitt", false);
 let bpTen3 = new Question(10, "Did you appear in the TV show 'Friends'?", "Yes", "Brad Pitt", false);
-let bpTen4 = new Question(10, "Were you born in Oklahoma", "Yes", "Brad Pitt", false);
+let bpTen4 = new Question(10, "Were you born in Oklahoma?", "Yes", "Brad Pitt", false);

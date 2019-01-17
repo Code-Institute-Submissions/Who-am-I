@@ -20,7 +20,6 @@ function creatingQuestionArray(num, arr) {
 
 function getRandomQuestion(str, str2, arr) {
     let question = arr[Math.floor(Math.random() * arr.length)];
-    console.log(question)
     if (document.getElementById("questionOne" + str2).textContent != question.question && document.getElementById("questionTwo"+ str2).textContent != question.question && document.getElementById("questionThree" + str2).textContent != question.question) {
         document.getElementById("question" + str + str2).textContent = question.question;
     }
@@ -48,3 +47,4 @@ function answerQuestion(str, arr, select, str2) {
         }
     }
 }
+

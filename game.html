@@ -32,277 +32,266 @@
                             <p>For each question you have 3 options, so choose wisely.</p>
                             <p>When you check the answer to your question the answer will be printed underneath the question.</p>
                             <p>You can guess who the celebrity is at any time in the submit box at the bottom of the screen.</p>
-
                         </div>
                     </div>
                 </div>
             </div>
-    </header>
+        </header>
 
-    <article>
-        <section>
-            <div class="row center-divs">
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                    <p>Q1</p>
-                    <p id="showQuestionOne"></p>
-                    <p id="answerOne"></p>
-                    <form id="hideQuestionFormOne" onsubmit="answerQuestion('One', qOne, questionSelectOne, 'Two'); creatingQuestionArray(2,qTwo); getRandomQuestion('One', 'Two', qTwo); getRandomQuestion('Two', 'Two', qTwo); getRandomQuestion('Three', 'Two', qTwo);  return false; ">
-                        <div>
-                            <select id="questionSelectOne">
+        <article>
+            <section>
+                <div class="row center-divs">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <p>Q1</p>
+                        <p id="showQuestionOne"></p>
+                        <p id="answerOne"></p>
+                        <form id="hideQuestionFormOne" onsubmit="answerQuestion('One', qOne, questionSelectOne, 'Two'); creatingQuestionArray(2,qTwo); getRandomQuestion('One', 'Two', qTwo); getRandomQuestion('Two', 'Two', qTwo); getRandomQuestion('Three', 'Two', qTwo);  return false; ">
+                            <div>
+                                <select id="questionSelectOne">
                                 <option id="questionOneOne">a</option>
                                 <option id="questionTwoOne">b</option>
                                 <option id="questionThreeOne">c</option>
                             </select>
-                        </div>
-                        <div>
-                            <input id="hideButtonOne" type="submit" value="Check Answer" class="btn btn-light margin-top">
-                        </div>
-                    </form>    
-                </div>
+                            </div>
+                            <div>
+                                <input id="hideButtonOne" type="submit" value="Check Answer" class="btn btn-light margin-top">
+                            </div>
+                        </form>
+                    </div>
 
 
 
-                <div class="col-sm-12  col-md-6 col-lg-6" id="displayQuestionTwo">
-                    <p>Q2</p>
-                    <p id="showQuestionTwo"></p>
-                    <p id="answerTwo"></p>
-                    <form id="hideQuestionFormTwo" onsubmit="answerQuestion('Two', qTwo, questionSelectTwo, 'Three'); creatingQuestionArray(3,qThree);  getRandomQuestion('One', 'Three', qThree,); getRandomQuestion('Two', 'Three', qThree); getRandomQuestion('Three', 'Three', qThree);  return false; ">
-                        <div>   
-                            <select id="questionSelectTwo">
+                    <div class="col-sm-12  col-md-6 col-lg-6" id="displayQuestionTwo">
+                        <p>Q2</p>
+                        <p id="showQuestionTwo"></p>
+                        <p id="answerTwo"></p>
+                        <form id="hideQuestionFormTwo" onsubmit="answerQuestion('Two', qTwo, questionSelectTwo, 'Three'); creatingQuestionArray(3,qThree);  getRandomQuestion('One', 'Three', qThree,); getRandomQuestion('Two', 'Three', qThree); getRandomQuestion('Three', 'Three', qThree);  return false; ">
+                            <div>
+                                <select id="questionSelectTwo">
                                 <option id="questionOneTwo">a</option>
                                 <option id="questionTwoTwo">b</option>
                                 <option id="questionThreeTwo">c</option>
                             </select>
-                        </div> 
-                        <div>
-                            <input id="hideButtonTwo" type="submit" value="Check Answer" class="btn btn-light margin-top">
-                        </div>
-                    </form>
-                        
+                            </div>
+                            <div>
+                                <input id="hideButtonTwo" type="submit" value="Check Answer" class="btn btn-light margin-top">
+                            </div>
+                        </form>
+
+                    </div>
                 </div>
-            </div>
-        </section>
-        <br>
-        <section>
-            <div class="row center-divs">
-                <div class="col-sm-12 col-md-6 col-lg-6" id="displayQuestionThree">
-                    <p>Q3</p>
-                    <p id="showQuestionThree"></p>
-                    <p id="answerThree"></p>
-                    <form id="hideQuestionFormThree" onsubmit="answerQuestion('Three', qThree, questionSelectThree, 'Four'); creatingQuestionArray(4,qFour);  getRandomQuestion('One', 'Four', qFour,); getRandomQuestion('Two', 'Four', qFour); getRandomQuestion('Three', 'Four', qFour);  return false; ">
-                        <div>
-                            <select id="questionSelectThree">
+            </section>
+            <br>
+            <section>
+                <div class="row center-divs">
+                    <div class="col-sm-12 col-md-6 col-lg-6" id="displayQuestionThree">
+                        <p>Q3</p>
+                        <p id="showQuestionThree"></p>
+                        <p id="answerThree"></p>
+                        <form id="hideQuestionFormThree" onsubmit="answerQuestion('Three', qThree, questionSelectThree, 'Four'); creatingQuestionArray(4,qFour);  getRandomQuestion('One', 'Four', qFour,); getRandomQuestion('Two', 'Four', qFour); getRandomQuestion('Three', 'Four', qFour);  return false; ">
+                            <div>
+                                <select id="questionSelectThree">
                                 <option id="questionOneThree">a</option>
                                 <option id="questionTwoThree">b</option>
                                 <option id="questionThreeThree">c</option>
                             </select>
-                        </div>
-                        <div>
-                            <input id="hideButtonThree" type="submit" value="Check Answer" class="btn btn-light margin-top">
-                        </div>
-                    </form>
-                </div>
+                            </div>
+                            <div>
+                                <input id="hideButtonThree" type="submit" value="Check Answer" class="btn btn-light margin-top">
+                            </div>
+                        </form>
+                    </div>
 
-                <div class="col-sm-12  col-md-6 col-lg-6" id="displayQuestionFour">
-                    <p>Q4</p>
-                    <p id="showQuestionFour"></p>
-                    <p id="answerFour"></p>
-                    <form id="hideQuestionFormFour" onsubmit="answerQuestion('Four', qFour, questionSelectFour, 'Five'); creatingQuestionArray(5,qFive);  getRandomQuestion('One', 'Five', qFive,); getRandomQuestion('Two', 'Five', qFive); getRandomQuestion('Three', 'Five', qFive);  return false; ">
-                        <div>
-                            <select id="questionSelectFour">
+                    <div class="col-sm-12  col-md-6 col-lg-6" id="displayQuestionFour">
+                        <p>Q4</p>
+                        <p id="showQuestionFour"></p>
+                        <p id="answerFour"></p>
+                        <form id="hideQuestionFormFour" onsubmit="answerQuestion('Four', qFour, questionSelectFour, 'Five'); creatingQuestionArray(5,qFive);  getRandomQuestion('One', 'Five', qFive,); getRandomQuestion('Two', 'Five', qFive); getRandomQuestion('Three', 'Five', qFive);  return false; ">
+                            <div>
+                                <select id="questionSelectFour">
                                 <option id="questionOneFour">a</option>
                                 <option id="questionTwoFour">b</option>
                                 <option id="questionThreeFour">c</option>
                             </select>
-                        </div>
-                        <div class="col">
-                            <input id="hideButtonFour" type="submit" value="Check Answer" class="btn btn-light margin-top">
-                        </div>
-                    </form>
+                            </div>
+                            <div class="col">
+                                <input id="hideButtonFour" type="submit" value="Check Answer" class="btn btn-light margin-top">
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <br>
-
-
-
-
-        <section>
-            <div class="row center-divs">
-                <div class="col-sm-12 col-md-6 col-lg-6" id="displayQuestionFive">
-                    <p>Q5</p>
-                    <p id="showQuestionFive"></p>
-                    <p id="answerFive"></p>
-                    <form id="hideQuestionFormFive" onsubmit="answerQuestion('Five', qFive, questionSelectFive, 'Six'); creatingQuestionArray(6,qSix);  getRandomQuestion('One', 'Six', qSix,); getRandomQuestion('Two', 'Six', qSix); getRandomQuestion('Three', 'Six', qSix);  return false; ">
-                        <div>
-                            <select id="questionSelectFive">
+            </section>
+            <br>
+            
+            <section>
+                <div class="row center-divs">
+                    <div class="col-sm-12 col-md-6 col-lg-6" id="displayQuestionFive">
+                        <p>Q5</p>
+                        <p id="showQuestionFive"></p>
+                        <p id="answerFive"></p>
+                        <form id="hideQuestionFormFive" onsubmit="answerQuestion('Five', qFive, questionSelectFive, 'Six'); creatingQuestionArray(6,qSix);  getRandomQuestion('One', 'Six', qSix,); getRandomQuestion('Two', 'Six', qSix); getRandomQuestion('Three', 'Six', qSix);  return false; ">
+                            <div>
+                                <select id="questionSelectFive">
                                 <option id="questionOneFive">a</option>
                                 <option id="questionTwoFive">b</option>
                                 <option id="questionThreeFive">c</option>
                             </select>
-                        </div>
-                        <div>
-                            <input id="hideButtonFive" type="submit" value="Check Answer" class="btn btn-light margin-top">
-                        </div>
-                    </form>
-                </div>
+                            </div>
+                            <div>
+                                <input id="hideButtonFive" type="submit" value="Check Answer" class="btn btn-light margin-top">
+                            </div>
+                        </form>
+                    </div>
 
-                <div class="col-sm-12  col-md-6 col-lg-6" id="displayQuestionSix">
-                    <p>Q6</p>
-                    <p id="showQuestionSix"></p>
-                    <p id="answerSix"></p>
-                    <form id="hideQuestionFormSix" onsubmit="answerQuestion('Six', qSix, questionSelectSix, 'Seven'); creatingQuestionArray(7, qSeven);  getRandomQuestion('One', 'Seven', qSeven,); getRandomQuestion('Two', 'Seven', qSeven); getRandomQuestion('Three', 'Seven', qSeven);  return false;">
-                        <div>
-                            <select id="questionSelectSix">
+                    <div class="col-sm-12  col-md-6 col-lg-6" id="displayQuestionSix">
+                        <p>Q6</p>
+                        <p id="showQuestionSix"></p>
+                        <p id="answerSix"></p>
+                        <form id="hideQuestionFormSix" onsubmit="answerQuestion('Six', qSix, questionSelectSix, 'Seven'); creatingQuestionArray(7, qSeven);  getRandomQuestion('One', 'Seven', qSeven,); getRandomQuestion('Two', 'Seven', qSeven); getRandomQuestion('Three', 'Seven', qSeven);  return false;">
+                            <div>
+                                <select id="questionSelectSix">
                                 <option id="questionOneSix">a</option>
                                 <option id="questionTwoSix">b</option>
                                 <option id="questionThreeSix">c</option>
                             </select>
-                        </div>
-                        <div>
-                            <input id="hideButtonSix" type="submit" value="Check Answer" class="btn btn-light margin-top">
-                        </div>
-                    </form>
+                            </div>
+                            <div>
+                                <input id="hideButtonSix" type="submit" value="Check Answer" class="btn btn-light margin-top">
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <br>
+            </section>
+            <br>
 
-        <section>
-            <div class="row center-divs">
-                <div class="col-sm-12 col-md-6 col-lg-6" id="displayQuestionSeven">
-                    <p>Q7</p>
-                    <p id="showQuestionSeven"></p>
-                    <p id="answerSeven"></p>
-                    <form id="hideQuestionFormSeven" onsubmit="answerQuestion('Seven', qSeven, questionSelectSeven, 'Eight'); creatingQuestionArray(8, qEight);  getRandomQuestion('One', 'Eight', qEight,); getRandomQuestion('Two', 'Eight', qEight); getRandomQuestion('Three', 'Eight', qEight); return false;">
-                        <div>
-                            <select id="questionSelectSeven">
+            <section>
+                <div class="row center-divs">
+                    <div class="col-sm-12 col-md-6 col-lg-6" id="displayQuestionSeven">
+                        <p>Q7</p>
+                        <p id="showQuestionSeven"></p>
+                        <p id="answerSeven"></p>
+                        <form id="hideQuestionFormSeven" onsubmit="answerQuestion('Seven', qSeven, questionSelectSeven, 'Eight'); creatingQuestionArray(8, qEight);  getRandomQuestion('One', 'Eight', qEight,); getRandomQuestion('Two', 'Eight', qEight); getRandomQuestion('Three', 'Eight', qEight); return false;">
+                            <div>
+                                <select id="questionSelectSeven">
                                 <option id="questionOneSeven">a</option>
                                 <option id="questionTwoSeven">b</option>
                                 <option id="questionThreeSeven">c</option>
                             </select>
-                        </div>
-                        <div class="col">
-                            <input id="hideButtonSeven" type="submit" value="Check Answer" class="btn btn-light margin-top">
-                        </div>
-                    </form>
-                </div>
+                            </div>
+                            <div class="col">
+                                <input id="hideButtonSeven" type="submit" value="Check Answer" class="btn btn-light margin-top">
+                            </div>
+                        </form>
+                    </div>
 
-
-
-                <div class="col-sm-12  col-md-6 col-lg-6" id="displayQuestionEight">
-                    <p>Q8</p>
-                    <p id="showQuestionEight"></p>
-                    <p id="answerEight"></p>
-                    <form id="hideQuestionFormEight" onsubmit="answerQuestion('Eight', qEight, questionSelectEight, 'Nine'); creatingQuestionArray(9, qNine);  getRandomQuestion('One', 'Nine', qNine,); getRandomQuestion('Two', 'Nine', qNine); getRandomQuestion('Three', 'Nine', qNine);  return false;">
-                        <div>
-                            <select id="questionSelectEight">
+                    <div class="col-sm-12  col-md-6 col-lg-6" id="displayQuestionEight">
+                        <p>Q8</p>
+                        <p id="showQuestionEight"></p>
+                        <p id="answerEight"></p>
+                        <form id="hideQuestionFormEight" onsubmit="answerQuestion('Eight', qEight, questionSelectEight, 'Nine'); creatingQuestionArray(9, qNine);  getRandomQuestion('One', 'Nine', qNine,); getRandomQuestion('Two', 'Nine', qNine); getRandomQuestion('Three', 'Nine', qNine);  return false;">
+                            <div>
+                                <select id="questionSelectEight">
                                 <option id="questionOneEight">a</option>
                                 <option id="questionTwoEight">b</option>
                                 <option id="questionThreeEight">c</option>
                             </select>
-                        </div>
-                        <div class="col">
-                            <input id="hideButtonEight" type="submit" value="Check Answer" class="btn btn-light margin-top">
-                        </div>
-                    </form>
+                            </div>
+                            <div class="col">
+                                <input id="hideButtonEight" type="submit" value="Check Answer" class="btn btn-light margin-top">
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <br>
+            </section>
+            <br>
 
-        <section>
-            <div class="row center-divs">
-                <div class="col-sm-12 col-md-6 col-lg-6" id="displayQuestionNine">
-                    <p>Q9</p>
-                    <p id="showQuestionNine"></p>
-                    <p id="answerNine"></p>
-                    <form id="hideQuestionFormNine" onsubmit="answerQuestion('Nine', qNine, questionSelectNine, 'Ten'); creatingQuestionArray(10, qTen);  getRandomQuestion('One', 'Ten', qTen,); getRandomQuestion('Two', 'Ten', qTen); getRandomQuestion('Three', 'Ten', qTen);  return false;">
-                        <div>
-                            <select id="questionSelectNine">
+            <section>
+                <div class="row center-divs">
+                    <div class="col-sm-12 col-md-6 col-lg-6" id="displayQuestionNine">
+                        <p>Q9</p>
+                        <p id="showQuestionNine"></p>
+                        <p id="answerNine"></p>
+                        <form id="hideQuestionFormNine" onsubmit="answerQuestion('Nine', qNine, questionSelectNine, 'Ten'); creatingQuestionArray(10, qTen);  getRandomQuestion('One', 'Ten', qTen,); getRandomQuestion('Two', 'Ten', qTen); getRandomQuestion('Three', 'Ten', qTen);  return false;">
+                            <div>
+                                <select id="questionSelectNine">
                                 <option id="questionOneNine">a</option>
                                 <option id="questionTwoNine">b</option>
                                 <option id="questionThreeNine">c</option>
                             </select>
-                        </div>
-                        <div class="col">
-                            <input id="hideButtonNine" type="submit" value="Check Answer" class="btn btn-light margin-top">
-                        </div>
-                    </form>
-                </div>
+                            </div>
+                            <div class="col">
+                                <input id="hideButtonNine" type="submit" value="Check Answer" class="btn btn-light margin-top">
+                            </div>
+                        </form>
+                    </div>
 
-
-
-                <div class="col-sm-12  col-md-6 col-lg-6" id="displayQuestionTen">
-                    <p>Q10</p>
-                    <p id="showQuestionTen"></p>
-                    <p id="answerTen"></p>
-                    <form id="hideQuestionFormTen" onsubmit="answerQuestion('Ten', qTen, questionSelectTen, 'Two'); return false;">
-                        <div>
-                            <select id="questionSelectTen">
+                    <div class="col-sm-12  col-md-6 col-lg-6" id="displayQuestionTen">
+                        <p>Q10</p>
+                        <p id="showQuestionTen"></p>
+                        <p id="answerTen"></p>
+                        <form id="hideQuestionFormTen" onsubmit="answerQuestion('Ten', qTen, questionSelectTen, 'Two'); return false;">
+                            <div>
+                                <select id="questionSelectTen">
                                 <option id="questionOneTen">a</option>
                                 <option id="questionTwoTen">b</option>
                                 <option id="questionThreeTen">c</option>
                             </select>
-                        </div>
-                        <div class="col">
-                            <input id="hideButtonTen" type="submit" value="Check Answer" class="btn btn-light margin-top">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-        <br>
-
-        <section>
-
-            <form class="center-divs" id="myForm" onsubmit="checkAnswer(); return false;">
-                <p>Enter your Guess:</p>
-                <input type="text" name="answer">
-                <input class="btn btn-light" type="submit" value="Submit">
-                <div id="correctModal" class="modal">
-
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h3>Congrats!</h3>
-                        </div>
-                        <div class="modal-body">
-                            <h5>You got it right!!</h5>
-                            <p>Would you like to play again?</p>
-                            <a class="btn btn-light" href="game.html">Play Again</a>
-                        </div>
-
+                            </div>
+                            <div class="col">
+                                <input id="hideButtonTen" type="submit" value="Check Answer" class="btn btn-light margin-top">
+                            </div>
+                        </form>
                     </div>
-
                 </div>
-                <div id="incorrectModal" class="modal">
+            </section>
+            <br>
 
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h3>Oops!</h3>
+            <section>
+                <form class="center-divs" id="myForm" onsubmit="checkAnswer(); return false;">
+                    <p>Enter your Guess:</p>
+                    <input type="text" name="answer">
+                    <input class="btn btn-light" type="submit" value="Submit">
+                    <div id="correctModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3>Congrats!</h3>
+                            </div>
+                            <div class="modal-body">
+                                <h5>You got it right!!</h5>
+                                <p>Would you like to play again?</p>
+                                <a class="btn btn-light" href="game.html">Play Again</a>
+                            </div>
                         </div>
-                        <div class="modal-body">
-                            <h5>You got it Wrong</h5>
-                            <p>Would you like to try again?</p>
-                            <button type="button" class="btn btn-light" id="close">Try Again</button>
-                            <p class="margin-top">Reveal the answer</p>
-                            <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#action" aria-expanded="false">Reveal</button>
-                            <div class="collapse" id="action">
-                                <div class="card card-body">
-                                    <div id="correctAnswer">
+                    </div>
+                    <div id="incorrectModal" class="modal">
 
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3>Oops!</h3>
+                            </div>
+                            <div class="modal-body">
+                                <h5>You got it Wrong</h5>
+                                <p>Would you like to try again?</p>
+                                <button type="button" class="btn btn-light" id="close">Try Again</button>
+                                <p class="margin-top">Reveal the answer</p>
+                                <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#action" aria-expanded="false">Reveal</button>
+                                <div class="collapse" id="action">
+                                    <div class="card card-body">
+                                        <div id="correctAnswer">
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </form>
-        </section>
-        <br>
-    </article>
+                </form>
+            </section>
+            <br>
+        </article>
     </div>
 
 

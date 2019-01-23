@@ -1,18 +1,58 @@
+# Who am I?
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+Interactive Frontend Development Project - Code Institute
+
+Who am I? is a guessing game similar to 20Q. A celebrity name is picked at random by the computer and the goal of the user is to guess the name correctly.
+The user has ten questions to ask. For each question, they have an option of three questoins to ask. They can guess at any time. The game is designed so that by the end, it should be obvious to who the celebrity is.
+
+A live version can be found [Here](https://dmongey101.github.io/Who-am-I/).
+
+## UX
+
+The design of the game is very simple. When a player submits a question that question is locekd on the screen so they may not go back and change the question. 
+A modal is used to tell the player whether or not they are correct and allows them to try again or to check the answer. 
+
+### No Template was used
+
+User requirements are met in the following ways:
 
 
-Hi there! Welcome to Cloud9 IDE!
 
-To get you started, create some files, play with the terminal,
-or visit http://docs.c9.io for our documentation.
-If you want, you can also go watch some training videos at
-http://www.youtube.com/user/c9ide.
+## Wireframing
+    
+Wireframes were made on pen and paper.
 
-Happy coding!
-The Cloud9 IDE team
+## Technologies Used
+
+* HTML
+* CSS
+* Bootstrap
+* JavaScript
+
+## Testing
+
+The sites responsiveness was tested using Google developer tools. All devices provided were tested.
+
+Manual testing was done to ensure:
+
+* The same question never appears more than once.
+* Appropriate win/loose notifications show up.
+* Modals work correctly.
+
+## Deployment
+
+The site is hosted on github pages.
+It is deployed from the master branch.
+
+### Run Locally
+
+To run this site locally, in your terminal enter: git clone https://dmongey101.github.io/Who-am-I/
+
+## Credits
+
+### Media
+
+* The background image is from google images.
+* Fonts used were obtained from Google Fonts.
+
+

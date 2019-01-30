@@ -30,7 +30,7 @@ let bFive5 = new Question(5, "Have you performed live recently?", "Yes", "Beyonc
 let bSix1 = new Question(6, "Are you a trend setter?", "Yes", "Beyonce");
 let bSix2 = new Question(6, "Are you known for being on TV?", "No", "Beyonce");
 let bSix3 = new Question(6, "Do you play guitar", "No", "Beyonce");
-let bSix4 = new Question(6, "Are you a singer?", "Yes", "Beyonce");
+let bSix4 = new Question(6, "Have you ever won an oscar?", "No", "Beyonce");
 
 let bSeven1 = new Question(7, "Were you or are you still part of a girl band?", "Yes", "Beyonce");
 let bSeven2 = new Question(7, "Did you ever star in a blockbuster movie?", "No", "Beyonce");
@@ -47,7 +47,7 @@ let bNine2 = new Question(9, "Are you sometimes known as a Queen?", "Yes", "Beyo
 let bNine3 = new Question(9, "Were you ever the most beatiful person in the world?", "Yes", "Beyonce");
 let bNine4 = new Question(9, "Do you sing in the shower?", "Yes", "Beyonce");
 
-let bTen1 = new Question(10, "Were you a member of Spice Girls?", "Yes", "Beyonce");
+let bTen1 = new Question(10, "Were you a member of Destiny's Child?", "Yes", "Beyonce");
 let bTen2 = new Question(10, "Were you born in Houston?", "Yes", "Beyonce");
 let bTen3 = new Question(10, "Did you sing Halo?", "Yes", "Beyonce");
 let bTen4 = new Question(10, "Are you well known to give to charity?", "Yes", "Beyonce");

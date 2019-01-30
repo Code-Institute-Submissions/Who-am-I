@@ -1,7 +1,8 @@
-body,
-html {
-  background-image: linear-gradient(#C5D8F9, #E6EFFE);
-  height: 100%;
+html, 
+body {
+    background-image: linear-gradient(#C5D8F9, #E6EFFE);
+    height: 100%;
+    background-attachment: fixed;
 }
 
 h1 {

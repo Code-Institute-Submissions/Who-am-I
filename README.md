@@ -22,7 +22,7 @@ User requirements are met in the following ways:
 
 ### Wireframing
     
-Wireframes were made on pen and paper.
+Wireframes were made on pen and paper and can be found in the wireframe folder in the main project file.
 
 ## Features
 

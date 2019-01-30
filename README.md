@@ -16,11 +16,28 @@ A modal is used to tell the player whether or not they are correct and allows th
 
 User requirements are met in the following ways:
 
+* When a user clicks on the dropdown, they are given 3 random questions to choose from. 
+* When a user submits their question, the question and answer are printed on the screen.
+* When a user submits an guess, an appropriate modal is triggered.
 
-
-## Wireframing
+### Wireframing
     
 Wireframes were made on pen and paper.
+
+## Features
+
+### Existing Features
+
+* Various celebrities to choose.
+* Modal for information on how to play.
+* End of game modals to signal if you won or lost.
+* Multiple questions to choose from.
+* New game button.
+
+### Features left to implement
+
+* More celebrities and questions.
+* An unlock feature that when a certain question is asked it unlocks questions further on releated to the question asked. 
 
 ## Technologies Used
 
@@ -38,6 +55,7 @@ Manual testing was done to ensure:
 * The same question never appears more than once.
 * Appropriate win/loose notifications show up.
 * Modals work correctly.
+* All buttons and links function as intened.
 
 ## Deployment
 

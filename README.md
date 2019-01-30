@@ -70,7 +70,7 @@ To run this site locally, in your terminal enter: git clone https://dmongey101.g
 
 ### Media
 
-* The background image is from google images.
 * Fonts used were obtained from Google Fonts.
+* Icon used was obtained from Font Awesome
 
 
